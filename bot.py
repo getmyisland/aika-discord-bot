@@ -4,6 +4,7 @@ import os
 from dotenv import load_dotenv
 import random
 
+# Load the token
 load_dotenv()
 TOKEN = os.getenv('TOKEN')
 
@@ -12,14 +13,17 @@ description = '''Discord Bot made by GetMyIsland'''
 intents = discord.Intents.default()
 intents.members = True
 
+#Create the bot
 bot = commands.Bot(command_prefix=command_prefix, description=description, intents=intents)
 
 
+# When the bot goes online
 @bot.event
 async def on_ready():
     print('Logged in as ' + bot.user.name)
 
 
+# When a member joins a channel
 @bot.event
 async def on_member_join(member):
     guild = member.guild
@@ -27,9 +31,10 @@ async def on_member_join(member):
         await guild.system_channel.send('Welcome {0.mention} to {1.name}!'.format(member, guild))
 
 
+# When a message gets send
 @bot.event
 async def on_message(message):
-    if message.author == bot.user:
+    if message.author == bot.user and message.author.user.bot:
         return
 
     print('[{0.guild.name}] Message from {0.author}: {0.content}'.format(message))
@@ -70,7 +75,7 @@ async def coinflip(ctx):
 
 @bot.command(description="Gives out a random fact")
 async def fact(ctx):
-    lines = open('facts.txt').read().splitlines()
+    lines = open(os.getcwd() + '/facts.txt').read().splitlines()
     random_line = random.choice(lines)
     fact = random_line.split(';')
     response = fact[0] + '\n' + '\n' + fact[1]
