@@ -1,23 +1,33 @@
 import discord
+from discord.ext import commands
 import os
 from dotenv import load_dotenv
 
 load_dotenv()
-
 TOKEN = os.getenv('TOKEN')
 
-class CreateClient(discord.Client):
-    async def on_ready(self):
-        print('Logged on as {0}!'.format(self.user))
+description = '''Example Bot'''
 
-    async def on_message(self, message):
-        if message.author == client.user:
-            return
+intents = discord.Intents.default()
+intents.members = True
 
-        print('Message from {0.author}: {0.content}'.format(message))
+bot = commands.Bot(command_prefix=';', description=description, intents=intents)
 
-        if message.content.lower().startswith('hello'):
-            await message.channel.send('Hello!')
+@bot.event
+async def on_ready():
+    print('Logged in as')
+    print(bot.user.name)
+    print(bot.user.id)
+    print('------')
 
-client = CreateClient()
-client.run(TOKEN)
+@bot.event
+async def on_message(message):
+    if message.author == bot.user:
+        return
+
+    print('[{0.guild.name}] Message from {0.author}: {0.content}'.format(message))
+
+    if message.content.lower().startswith('hello'):
+        await message.channel.send('Hello!')
+
+bot.run(TOKEN)
