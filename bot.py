@@ -68,6 +68,15 @@ async def coinflip(ctx):
         await ctx.send('Tails')
 
 
+@bot.command(description="Gives out a random fact")
+async def fact(ctx):
+    lines = open('facts.txt').read().splitlines()
+    random_line = random.choice(lines)
+    fact = random_line.split(';')
+    response = fact[0] + '\n' + '\n' + fact[1]
+    await ctx.send(response)
+
+
 @bot.command(description="See all commands")
 async def commands(ctx):
     await ctx.send('Coming Soon!')
