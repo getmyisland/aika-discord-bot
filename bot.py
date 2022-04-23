@@ -23,18 +23,10 @@ async def on_ready():
     print('Logged in as ' + bot.user.name)
 
 
-# When a member joins a channel
-@bot.event
-async def on_member_join(member):
-    guild = member.guild
-    if guild.system_channel is not None:
-        await guild.system_channel.send('Welcome {0.mention} to {1.name}!'.format(member, guild))
-
-
 # When a message gets send
 @bot.event
 async def on_message(message):
-    if message.author == bot.user and message.author.user.bot:
+    if message.author == bot.user:
         return
 
     print('[{0.guild.name}] Message from {0.author}: {0.content}'.format(message))
@@ -44,16 +36,9 @@ async def on_message(message):
         await message.channel.send('Hello!')
 
 
-@bot.command(description='Add two values together')
-async def add(ctx, left: int, right: int):
-    """Adds two numbers together."""
-    await ctx.send(left + right)
-
-
-@bot.command(description='Subtract the second value from the first')
-async def subtract(ctx, left: int, right: int):
-    """Adds two numbers together."""
-    await ctx.send(left - right)
+@bot.command(description="Talk with the bot")
+async def talk(ctx, *content: str):
+    await ctx.send('Coming Soon!')
 
 
 @bot.command(description='Choose between an unknown amount of choices')
@@ -81,9 +66,5 @@ async def fact(ctx):
     response = fact[0] + '\n' + '\n' + fact[1]
     await ctx.send(response)
 
-
-@bot.command(description="See all commands")
-async def commands(ctx):
-    await ctx.send('Coming Soon!')
 
 bot.run(TOKEN)

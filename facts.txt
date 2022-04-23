@@ -25,181 +25,61 @@ What is the book that the Statue of Liberty is holding?;The statue is of a robed
 What language did the Normans speak in 1066?;The Anglo-Norman dialect of Norman was a language of administration in England following the Norman Conquest. This left a legacy of Law French in the language of English courts (though it was also influenced by Parisian French).
 Where is Snake Island?;Off-limits and full of venomous pit vipers, its nickname is frighteningly apt. Off the shore of Brazil, almost 93 miles away from São Paulo downtown, is Ilha de Queimada Grande.
 How many pints of blood do you have in your body?;The average adult has about 10 pints of blood in his body. Roughly 1 pint is given during a donation. A healthy donor may donate red blood cells every 56 days, or double red cells every 112 days.
-Do you need to refrigerate soy sauce?;
-How many frames per second are typically projected in modern movies?;
-Where is Snake Island?;
-What does CT stand for in medical terms?;
-What kind of alcohol is in beer?;
-What is your tongue attached to?;
-How many dogs years are in 1 human year?;
-Do snakes come from eggs?;
-Who was the first rock n roll artist?;
-When was the first website launched?;
-Which president is on the 500 dollar bill?;
-What do the Olympic rings stand for?;
-Who was the president on the 1000 dollar bill?;
-Who was the first Spaniard to set foot on what is now the United States?;
-Which state has 1350 miles of coastline?;
-What animal can live after being frozen?;
-Do cats have opposable thumbs?;
-Who were the astronauts that went to the moon?;
-Who was the last king of the Persian Empire?;
-Who was the first actor to play Doctor Who?;
-How deep is Lake Tahoe at its deepest point?;
-Who was the first president to receive a patent?;
-What Color Does natural gas burn?;
-What is petrified wood?;
-How long ago was the formation of the moon?;
-How old do you have to be to be elected president?;
-How much of the earth's fresh water is in ice sheets and glaciers?;
-What does the legal term with prejudice mean?;
-How many patents Thomas Edison had?;
-Is there really a funny bone?;
-What animal has four stomachs?;
-Is light an energy?;
-Is a cucumber a fruit or a vegetable?;
-When did the song Bette Davis eyes come out?;
-How old is Jason Earles from Hannah Montana?;
-How high do fireworks go up?;
-How long is a professional basketball game?;
-Which continent does not have an active volcano?;
-What were pennies made out of in 1943?;
-When were hurricanes named?;
-Who was the first five star general?;
-Why is the Oakland A's mascot an elephant?;
-How big is the London Eye?;
-Is central america considered North America?;
-What was the first permanent Spanish settlement in what is now the United States?;
-What were the Oscars made of during ww2?;
-Which month was named after the god of beginnings and endings?;
-When was the Constitution amended last?;
-What year were the hippies?;
-Who was the city of rome named after?;
-What do you call a group of sea turtles?;
-How many minutes do you boil an egg?;
-Who was the first star on the Hollywood Walk of Fame?;
-How many brains does a leech have?;
-Who was the third man on Apollo 11?;
-When was glass first made?;
-When was the frontier closed?;
-What song did vanilla ice sample?;
-How old do you have to be to buy a motorcycle?;
-Who was the first person to go to space?;
-Which animal sleeps 22 hours a day?;
-What was the first human organ to be successfully transplanted?;
-How did the bazooka get its name?;
-Which planet has the longest day?;
-Who is the most famous surrealist artist?;
 Is pure water a conductor?;Pure water is not a good conductor of electricity. Ordinary distilled water in equilibrium with carbon dioxide of the air has a conductivity of about 10 x 10-6 W-1*m-1 (20 dS/m). Because the electrical current is transported by the ions in solution, the conductivity increases as the concentration of ions increases.
 Where is curling from?;Curling was invented in medieval Scotland, with the first written reference to a contest using stones on ice coming from the records of Paisley Abbey, Renfrewshire, in February 1541.
-What temperature do the Celsius and Fahrenheit scales read the same?;
 What did Walt Disney originally want to name Mickey Mouse?;When Walt Disney was in the process of creating Mickey Mouse, he suggested the name of his new character to be Mortimer Mouse. However, his wife, Lillian Disney, felt the name sounded too pompous, and suggested Mickey, instead.
-Do mosquito eaters actually eat mosquitoes?;
-What year was the first lighthouse built?;
-What does DMC stand for on a Delorean?;
-Is a pine cone a fruit?;
-What state was once an independent nation?;
-What type of cloud is a tornado formed in?;
-Which animal sleeps 22 hours a day?;
-Where does longitude begin and end?;
-Where was the first Starbucks store?;
 Which island includes a bunch of bananas on its national flag?;The flag is blue with the Fijian arms drawn in gold and a carved whale tooth on a rope. Coat-of-Arms. According to Smith 1985, the specimens depicted in the Fijian coat-of-arms are three sugar canes, a coconut palm, a dove with olive branch and a bunch of bananas. The lion in the chief is holding a peeled coconut.
-Why do lights flicker in the distance?;
-How many symphonies did Mozart write?;
-Why do they call it a tank top?;
-What causes low engine temperature?;
-Can Cows Walk Down Stairs?;
-What color are grapes?;
-What color is Ariel's tail?;
-How long do you boil an egg to make egg salad?;
-What does it mean to have 20 60 vision?;
-Is an ostrich's eye bigger than its brain?;
-What do penguins drink?;
-How many chambers are in a dog's heart?;
-How much money is in a game of Monopoly?;
-How many times is scotch distilled?;
-What subject did Albert Einstein fail?;
-What country did Marco Polo Come from?;
-How many bees does it take to make a tablespoon of honey?;
-How many square miles is the state of Texas?;
-How many minutes do you boil an egg?;
-When did Ohio become a state?;
-How many hours a day do koalas sleep?;
-What side is the tassel on before graduation?;
-What was the highest denomination of United States currency ever produced?;
-When did the word dude originate?;
-How long is a good cat nap?;
-How much does an ATM machine weigh?;
-What element burns in contact with water?;
-When did Gmail come out?;
-When did Adolph Rickenbacker invent the electric guitar?;
-What is a meet cute?;
 What were George Washington's teeth made of?;Over the years, Washington wore several sets of false teeth. Even though many people today believe that these teeth were made out of wood, there is no proof that he ever had wooden teeth. His dentures were made of many things. They were often a combination of human teeth, animal teeth, and ivory.
 Who came up with the word Google?;Google came from the mathematical term googol. It's the number one followed by one hundred zeros. In its earliest version, Sergey Brin and Larry Page named their search engine "Back Rub." They changed the name to Google, which stems from the mathematical term "googol."
-When did the first microwaves come out?;
-When was the Braille invented?;
-Where did caesar salad get its name?;
-Who was the tallest president?;
-How does a rocket accelerate in space?;
-How many years did the Grinch put up with the Whos?;
-When were the pyramids of Giza built?;
-Is Antarctica a desert and why?;
-How much did the original nintendo cost when it first came out?;
-How many temporal bones are there?;
-Why do they call it a white elephant?;
-When was Shakespeare's first child born?;
-How long would it take you to run around the world?;
-How long does it take for your eyes to adjust to the darkness?;On an average it takes 30 to 45 minutes for your rods to be fully dark adapted to night vision. It also covers things such as Mesopic vision and Scotopic vision, eye health, and how to actually dark adapt. I suggest it as a good read.
-How big is a 45 rpm record?;
-Is octopus plural?;
-What year was the Chevelle made?;
-When did Mozart write his first symphony?;
-When was the first casino built in Atlantic City?;
-What does it mean to deep six something?;
 What was the statue of liberty for?;"The Statue of Liberty Enlightening the World" was a gift of friendship from the people of France to the United States and is recognized as a universal symbol of freedom and democracy. The Statue of Liberty was dedicated on October 28, 1886. It was designated as a National Monument in 1924.
 How many teeth does a polar bear have?;A polar bear's head is oblong and relatively small compared to body size. The muzzle is elongated with a "Roman-nosed" (slightly arched) snout. Polar bears have 42 teeth, which they use for catching food and for aggressive behavior. Polar bears use their incisors to shear off pieces of blubber and flesh.
-Can a shark swim backwards?;
-What mountain range runs through Pennsylvania?;
-Where is the National Cancer Institute?;
-How many rooms are there in the White House?;
-What team won the first Super Bowl ever?;
-What is Hamlet's father's name?;
-Where was golf first played in the US?;
-Where did Barack Obama get his bachelor's degree?;
-What does it mean when cows lay down?;
-Where was Walt Disney born?;
-Why do Mentos and diet coke react?;
-When did the Giants leave New York?;
-How strong is a strand of human hair?;
 When was Philadelphia the capital of the United States?;This mansion at 6th & Market Streets served as the presidential mansion of George Washington and John Adams, 1790–1800. Philadelphia served as the temporary capital of the United States, 1790–1800, while the Federal City was under construction in the District of Columbia.
 Can you eat the skin of Camembert?;Yep, you can eat the rind of any soft-ripened cheese like Brie or Camembert. But just so you know: Sometimes it won't taste so good. "Soft cheese bruises like an apple," says Maxx Sherman, director of national sales for the Marin French Cheese Company, which makes a number of soft cheeses in Petaluma, California.
-Why does your body get the chills?;
-When was the first Simpsons episode made?;
-Who is the founder of the modern day Democratic Party?;
-When was music first recorded?;
-What did june carter play?;
-How fast is a snail's pace?;
-Is it true that moss grows on the northside of a tree?;
-What does the dew point mean in weather?;
-When did King George III take the throne?;
-Which is the largest fresh water lake in the world?;
-Where did hieroglyphics develop?;
-Where were two famous ancient Greek battles fought?;
-Why do things look darker when they are wet?;
-When did Helen Keller go blind and deaf?;
-What is Hamlet's father's name?;
-When did the penny come out?;
-Who was the original Joker?;
-What did Bruce Lee do to train?;
-What does Big Ben refer to?;
-How far is it from home plate to second base?;
-When did they move the goal posts to the back of the end zone?;
-What is the stretch of water between Turkey and Greece?;
-How much was a gallon of gas in 1971?;
-Where did the name Manhattan come from?;
-What era is gone with the wind?;
-Do salmon die after they spawn?;
-Where did the name New Zealand come from?;
-How heavy is a space shuttle?;
-Can microwaves cause cancer?;
 When was the first Simpsons episode made?;The half-hour series premiered on December 17, 1989, with "Simpsons Roasting on an Open Fire", a Christmas special. "Some Enchanted Evening" was the first full-length episode produced, but it did not broadcast until May 1990, as the last episode of the first season, because of animation problems.
+How thick is a 2 x 4?;A piece of surfaced (sanded smooth) 2x4 lumber actually measures 1½ inches thick and 3½ inches wide. In rough-cut condition, a 2x4 is slightly less than 2 inches thick and approximately 4 inches wide. When wood is milled from a rough to a smooth surface, it loses about ¼-inch from each of its four sides.
+How many people are in the world right now?;According to the most recent United Nations estimates, the human population of the world is expected to reach 8 billion people in the spring of 2024. 7 Billion (2011) According to the United Nations, world population reached 7 Billion on October 31, 2011.
+Is the sun a yellow dwarf star?;The sun is classified as a G-type main-sequence star, or G dwarf star, or more imprecisely, a yellow dwarf. Actually, the sun — like other G-type stars — is white, but appears yellow through Earth's atmosphere. Stars generally get bigger as they grow older.
+Which is the largest state in the USA by area?;Alaska is the largest state in total area, land area, and water area. Despite being the second largest state, Texas is only 40% of the total area of largest state, Alaska. Montana is larger than every state it borders; only Alaska and Wyoming have a lower population density.
+Who was the first president to win the Nobel Peace Prize?;Theodore Roosevelt was the first U.S. president to win a Nobel Peace Prize.
+Who invented the hot dog?;The hot dog traces its lineage to the 15th-century Viennese sausage, or wienerwurst in German. Johann Georghehner, a butcher from the German city of Coburg, in Bavaria, is credited with inventing the “dachshund” or “little dog” sausage in the 17th century, and brought it to Frankfurt.
+How many albums have kiss sold?;Kiss is an American hard rock band that formed in New York City, USA in 1973. The group has performed and recorded continuously since their formation. KISS has sold over 100 million albums worldwide and has been awarded 45 gold albums to date, and has certified sales of 19 million records in the U.S.
+What great lake caught on fire?;When Lake Erie – or more exactly the Cuyahoga River which flows into Lake Erie – caught fire in 1969, it ignited a firestorm of public outrage over the indiscriminate dumping of sewage and industrial chemicals into the Great Lakes.
+Do whales have a nose?;They have nostrils called blowholes. Over millions of years of evoloution whales and dolphins nostrils moved to the top of their head. This allows them to breath by surfacing instead of them sticking their whole head out of the water. The first thing a newborn dolphin must do is to go to the surface to breathe.
+What does zip stand for in zip code?;“ZIP” is actually an acronym for Zone Improvement Plan. However, the USPS intentionally chose the acronym to indicate that mail travels more quickly when senders mark the postal code on their packages and envelopes. The general system of ZIP codes used today was implemented in 1963.
+How many meters deep is the Grand Canyon?;The Grand Canyon is 277 miles (446 km) long, up to 18 miles (29 km) wide and attains a depth of over a mile (6,000 feet or 1,800 meters).
+When was Philadelphia the capital of the United States?;This mansion at 6th & Market Streets served as the presidential mansion of George Washington and John Adams, 1790–1800. Philadelphia served as the temporary capital of the United States, 1790–1800, while the Federal City was under construction in the District of Columbia.
+Why is it called the Lone Star State?;Texas is nicknamed the Lone Star State to signify Texas as a former independent republic and as a reminder of the state's struggle for independence from Mexico. The "Lone Star" can be found on the Texas state flag and on the Texas state seal today.
+What did june carter play?;Valerie June Carter Cash (June 23, 1929 – May 15, 2003) was an American singer, dancer, songwriter, actress, comedian, and author who was a member of the Carter Family and the second wife of singer Johnny Cash. She played the guitar, banjo, harmonica, and autoharp, and acted in several films and television shows.
+How many republics were in the soviet union?;In the final decades of its existence, the Soviet Union officially consisted of fifteen Soviet Socialist Republics (SSRs). All of them, with the exception of the Russian Federation (until 1990), had their own local party chapters of the All-Union Communist Party.
+What animals change colors?;Furthermore, odds are that when you do see a chameleon change its color, it's probably trying to broadcast its mood rather than evade predators. Nevertheless, the animal kingdom is filled with amazing color-changers, several of which dramatically outdo the chameleon clan in the skill of rapid-fire camouflage.
+Where did the word cookies come from?;The word “cookie” comes from the Dutch “koekjes” which came from the Dutch “koek”, meaning “cake”; cookie was introduced to English in the very early 18th century. It is thought this term caught on more in the United States due to the strong Dutch heritage in early America.
+What was Muhammad Ali's original name?;Muhammad Ali, original name Cassius Marcellus Clay, Jr. (born January 17, 1942, Louisville, Kentucky, U.S.), American professional boxer and social activist. Ali was the first fighter to win the world heavyweight championship on three separate occasions; he successfully defended this title 19 times.
+What caused the Leaning Tower of Pisa?;The Leaning Tower of Pisa took 344 years to build, beginning in August 1173. It began to lean in 1178 once construction on the second floor had begun. The lean was due to one side sinking into the soft ground.
+How large is an oil barrel?;One barrel contains 42 gallons of crude oil from which, in the U.S., typically 19 gallons of gasoline are produced. In California, “additional other petroleum products such as alkylates” are added to the crude to create a “processing gain,” such that:
+What diseases can you get from lack of vitamin C?;Scurvy is a disease caused by a diet that lacks vitamin C (ascorbic acid). Patients develop anemia, debility, exhaustion, edema (swelling) in some parts of the body, and sometimes ulceration of the gums and loss of teeth. The name scurvy comes from the Latin scorbutus.
+What animals make up the platypus?;Platypus. An animal with a bill like a duck, a tail like a beaver, and feet like an otter sounds like something a mad scientist would create. Add to the list the ability to lay lizard-like eggs and shoot poison out of your foot, and you have a unique creature indeed.
+Who is generally considered to be the first king of England?;Arguments are made for a few different kings deemed to control enough of the ancient kingdoms of the Anglo-Saxons to be deemed the first King of England. For example Offa, king of Mercia, and Egbert, king of Wessex, are sometimes described as kings of England by popular writers, but not by all historians.
+How many presidents were only children?;No American president has remained an only child. All have had at least one full sibling, except for Franklin D. Roosevelt, Gerald Ford, Bill Clinton, and Barack Obama, who have or had half siblings.
+What is unincorporated territory?;Unincorporated territory is a legal term of art in United States law denoting an area controlled by the government of the U.S. "where fundamental rights apply as a matter of law, but other constitutional rights are not available".
+Is Elton John a knight?;In 1996, Elton was appointed a CBE (Commander of the British Empire). On 24 February 1998 he was knighted by Queen Elizabeth II, becoming Sir Elton John, in recognition of his contribution to music and fund-raising for AIDS charities.
+Where is the biggest tree in the world?;The General Sherman is a giant sequoia (Sequoiadendron giganteum) tree located in the Giant Forest of Sequoia National Park in Tulare County, in the U.S. state of California. By volume, it is the largest known living single stem tree on earth.
+What time is on the back of the Independence Hall 100 dollar bill?;The time on the clock of Independence Hall on the reverse, according to the U.S. Bureau of Engraving and Printing, shows approximately 4:10 on the older contemporary notes and 10:30 on the series 2009A notes released in 2013.
+When did Abraham Lincoln give the Gettysburg Address?;On November 19, 1863, President Abraham Lincoln delivered a short speech at the end of the ceremonies dedicating the battlefield cemetery at Gettysburg, Pennsylvania. That speech has come to be known as the Gettysburg Address.
+Which country has the most islands in the world?;The five main archipelagos are Indonesia, Japan, the Philippines, New Zealand, and the British Isles. The largest archipelagic state in the world, by area and population, is Indonesia. The archipelago with the most islands is the Archipelago Sea in Finland.
+What species is a jelly fish?;All jellyfish are Cnidaria, an animal phylum that contains jellies, sea anemones, and corals, among others. There are more than 10,000 species of Cnidaria, and less than 4,000 of these are Medusazoa—those animals we think of as jellyfish. Those 4,000 jellyfish can be divided into four different groups.
+Why do they add iodine to salt?;Iodised salt (also spelled iodized salt) is table salt mixed with a minute amount of various salts of the element iodine. The ingestion of iodide prevents iodine deficiency. Worldwide, iodine deficiency affects about two billion people and is the leading preventable cause of intellectual and developmental disabilities.
+What year did Woodstock take place?;It was held at Max Yasgur's 600-acre (240 ha; 0.94 sq mi) dairy farm in the Catskills near the hamlet of White Lake in the town of Bethel, New York, from August 15 to August 18, 1969. Bethel, in Sullivan County, is 43 miles (69 km) southwest of the town of Woodstock, New York, in adjoining Ulster County.
+Where was golf first played in the US?;It is thought that the first organized golf played in America was on Harleston Green, undeveloped pastureland near the corner of Pitt and Bull streets. In 1743, Charleston merchant David Deas received a shipment of 432 golf balls and ninety-six clubs from Scotland.
+Why is the human body temperature 98.6?;Why the Human Body Temperature Is 98.6 Degrees. Casey Chan. Scientists have found the reason why our body temperature is 98.6° Fahrenheit (37°C). Apparently it's the perfect balance, as it's warm enough to prevent fungal infection but not so hot that we need to eat nonstop to maintain our metabolism.
+What year was Santa Claus Is Coming To Town made?;Santa Claus Is Comin' to Town is a 1970 stop motion television special, made by Rankin-Bass. The film stars actor Fred Astaire as the narrator S.D. Kluger, Mickey Rooney as Kris Kringle/Santa Claus, Keenan Wynn as the Winter Warlock, and Paul Frees in various roles.
+What is the name of Beethoven's only opera?;Beethoven's Fidelio premiered with great success in Vienna, on May 23, 1814. But Beethoven had been fine-tuning Fidelio for nearly 10 years. At its debut in 1805, Beethoven's opera was called Leonore, and it flopped.
+Who was the third man on Apollo 11?;The successful completion of the first manned circum-lunar flight was followed by the announcement of the Apollo 11 crew of Neil Armstrong, Buzz Aldrin, and Michael Collins.
+When did Abraham Lincoln give the Gettysburg Address?;On November 19, 1863, President Abraham Lincoln delivered a short speech at the end of the ceremonies dedicating the battlefield cemetery at Gettysburg, Pennsylvania. That speech has come to be known as the Gettysburg Address.
+How many watts does a string of Christmas lights use?;A 100-count string of incandescent mini lights runs at 40 watts, while a 70 count of 5mm Wide Angle LEDs is approximately 4.8 watts total. In fact, because incandescent wattage is 80-90% more than LED wattage, the cost to power an incandescent can be up to 90x greater than powering an LED.
+How many people were in the band Nirvana?;Nirvana started in Aberdeen, Washington in 1987 when singer Kurt Cobain and the bassist Krist Novoselic met and decided to form a band. The band had 5 different drummers until they found Dave Grohl. They released their first studio album, Bleach, in 1989, with Chad Channing playing drums.
+Which is the strongest muscle in the human body?;If by strongest you mean “ability to exert a force on an external object”, then a human's strongest muscle is his or her 'masseter' muscle. The masseter muscle is a thick muscle in the cheek and is located at the back of the jaw.
+Where is man of war buried?;Man o' War died in 1947, and is buried beneath a larger-than-life bronze statue of himself at Kentucky Horse Park, surrounded by the graves of several of his 379 children (he was a prolific stud, unlike today's limp champions).
+How many bones does a horse have?;Generally, the horse has 205 bones (54 vertebral column, 36 ribs, 1 sternum, 34 skull, 40 front legs, 40 hindlegs). The number of tail coccygeal vertebrae is usually 18 but can also vary.
+Are white tigers real?;White tigers are a sub-species of Bengal tigers and not albino or their own species like many people think. White tigers occur after breeding two Bengal tigers with a recessive gene that controls coat color.
+How much money do US Olympic gold medalists get?;The U.S. Olympic Committee awards $25,000 for each gold medal, $15,000 for silver and $10,000 for bronze. But top athletes who are in the top income tax bracket , 39.6 per cent, will have to fork over as much as $9,900 of a gold medal payout.
+How many calories are in a Peep?;One serving of Peeps is five chick-shaped pieces, each containing 28 calories. This may not seem like a lot, but almost all of these calories come from sugar (one Peep has 7.2 grams of carbs, 6.8 of which are sugar), meaning they're as empty as it gets.
