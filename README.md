@@ -106,6 +106,10 @@ Gives out a random whale fact.
 
 Returns a random meme.
 
+### $joke
+
+Returns a random joke.
+
 ### $choose
 
 The bot chooses between the words passed in by the user.
