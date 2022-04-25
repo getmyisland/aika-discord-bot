@@ -37,6 +37,18 @@ async def talk(ctx, *content: str):
     await ctx.send('Coming Soon!')
 
 
+@bot.command(description="Displays all supported animal commands")
+async def animals(ctx):
+    description = '$dog' + '\t' + '= Get a random dog image \n' \
+                  '$dogfact' + '\t' + '= Get a random dog fact'
+
+    embed = discord.Embed(
+        title="Animal commands",
+        description=description
+    )
+    await ctx.send(embed=embed)
+
+
 @bot.command(description="Gives out a random dog image")
 async def dog(ctx):
     # Making a GET request to the endpoint

@@ -12,6 +12,10 @@ Shows all existing commands.
 
 Talk with the bot. Not implemented yet. The goal is to have conversations with the bot.
 
+### $animals
+
+Shows all animal commands.
+
 ### $dog
 
 Gives out a random dog image.
