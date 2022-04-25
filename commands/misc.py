@@ -8,6 +8,20 @@ class MiscCommands(commands.Cog):
     def __init__(self, client):
         self.bot = client
 
+    @commands.command()
+    async def meme(self, ctx):
+        resp = requests.get(f"https://some-random-api.ml/meme")
+        if 300 > resp.status_code >= 200:
+            content = resp.json()
+
+            embed = discord.Embed(
+                title=content['caption']
+            )
+            embed.set_image(url=content['image'])
+            await ctx.reply(embed=embed)
+        else:
+            await ctx.reply("Recieved a bad status code of " + str(resp.status_code))
+
     @commands.command(description='Choose between a list of choices')
     async def choose(self, ctx, *choices: str):
         # Chooses between multiple choices

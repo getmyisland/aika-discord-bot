@@ -102,6 +102,10 @@ Gives out a random whale fact.
 
 ## Misc commands
 
+### $meme
+
+Returns a random meme.
+
 ### $choose
 
 The bot chooses between the words passed in by the user.
