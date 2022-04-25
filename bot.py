@@ -3,7 +3,7 @@ from discord.ext import commands
 import os
 from dotenv import load_dotenv
 import random
-import aiohttp
+import requests
 
 # Load the token
 load_dotenv()
@@ -37,13 +37,36 @@ async def talk(ctx, *content: str):
     await ctx.send('Coming Soon!')
 
 
-@bot.command(description="Gives out a random fact")
-async def fact(ctx):
-    lines = open(os.getcwd() + '/resources/facts.txt').read().splitlines()
-    random_line = random.choice(lines)
-    fact = random_line.split(';')
-    response = fact[0] + '\n' + '\n' + fact[1]
-    await ctx.send(response)
+@bot.command(description="Gives out a random dog image")
+async def dog(ctx):
+    # Making a GET request to the endpoint
+    resp = requests.get("https://some-random-api.ml/img/dog")
+    # Checking if response has a healthy status code
+    if 300 > resp.status_code >= 200:
+        content = resp.json()
+        embed = discord.Embed(
+            title="Random dog picture"
+        )
+        embed.set_image(url=content['link'])
+        await ctx.reply(embed=embed)
+    else:
+        await ctx.reply("Recieved a bad status code of {resp.status_code}.")
+
+
+@bot.command(description="Gives out a random dog fact")
+async def dogfact(ctx):
+    # Making a GET request to the endpoint
+    resp = requests.get("https://some-random-api.ml/facts/dog")
+    # Checking if response has a healthy status code
+    if 300 > resp.status_code >= 200:
+        content = resp.json()
+        embed = discord.Embed(
+            title="Random dog fact",
+            description=content['fact']
+        )
+        await ctx.reply(embed=embed)
+    else:
+        await ctx.reply("Recieved a bad status code of {resp.status_code}.")
 
 
 @bot.command(description='Choose between a list of choices')
@@ -61,29 +84,6 @@ async def coinflip(ctx):
         await ctx.reply('Heads')
     else:
         await ctx.reply('Tails')
-
-
-@bot.command(description="Lists all members with a specific role")
-async def role(ctx, *role):
-    role_name = " ".join(role)
-
-    discord_role = discord.utils.get(ctx.guild.roles, name=role_name)
-
-    if discord_role is not None:
-        members = ''
-        for member in discord_role.members:
-            members = members + member.name + '\n'
-
-        if members:
-            embed = discord.Embed(
-                title="Users with the role " + role_name,
-                description=members
-            )
-            await ctx.reply(embed=embed)
-        else:
-            await ctx.reply("No user has the role " + role_name)
-    else:
-        await ctx.reply("There is no role with the name " + role_name)
 
 
 bot.run(TOKEN)

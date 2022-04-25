@@ -12,6 +12,14 @@ Shows all existing commands.
 
 Talk with the bot. Not implemented yet. The goal is to have conversations with the bot.
 
+### $dog
+
+Gives out a random dog image.
+
+### $dogfact
+
+Gives out a random dog fact.
+
 ### $choose
 
 The bot chooses between the words passed in by the user.
@@ -22,14 +30,3 @@ The bot chooses between the words passed in by the user.
 ### $coinflip
 
 The bot flips a coin and prints `Heads` or `Tails`.
-
-### $fact
-
-Gives out a random fact.
-
-### $role
-
-Prints all members with a specific role.
-
-**Example Input:** `$role Moderator`\
-**Example Output:** `GetMyIsland, Lucas, xxx_Player_xxx`
