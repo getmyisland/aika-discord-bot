@@ -9,7 +9,7 @@ class AnimalCommands(commands.Cog):
 
     @commands.command(description="Displays all supported animal commands")
     async def animals(self, ctx):
-        description = 'Supported animal keywords: `dog`, `cat`, `panda`, `redpanda`, `fox` \n Example: `$keyword` to get image or `$keywordfact` to get fact'
+        description = 'Supported animal keywords: `dog`, `cat`, `bird`, `panda`, `redpanda`, `fox`, `koala` \n Example: `$keyword` to get image or `$keywordfact` to get fact'
 
         embed = discord.Embed(
             title="Animal commands",
@@ -71,6 +71,36 @@ class AnimalCommands(commands.Cog):
             content = resp.json()
             embed = discord.Embed(
                 title="Random Cat fact",
+                description=content['fact']
+            )
+            await ctx.reply(embed=embed)
+        else:
+            await ctx.reply("Recieved a bad status code of " + str(resp.status_code))
+
+    @commands.command(description="Gives out a random bird image")
+    async def bird(self, ctx):
+        # Making a GET request to the endpoint
+        resp = requests.get("https://some-random-api.ml/img/birb")
+        # Checking if response has a healthy status code
+        if 300 > resp.status_code >= 200:
+            content = resp.json()
+            embed = discord.Embed(
+                title="Random Bird picture"
+            )
+            embed.set_image(url=content['link'])
+            await ctx.reply(embed=embed)
+        else:
+            await ctx.reply("Recieved a bad status code of " + str(resp.status_code))
+
+    @commands.command(description="Gives out a random bird fact")
+    async def birdfact(self, ctx):
+        # Making a GET request to the endpoint
+        resp = requests.get("https://some-random-api.ml/facts/birb")
+        # Checking if response has a healthy status code
+        if 300 > resp.status_code >= 200:
+            content = resp.json()
+            embed = discord.Embed(
+                title="Random Bird fact",
                 description=content['fact']
             )
             await ctx.reply(embed=embed)

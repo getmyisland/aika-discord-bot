@@ -36,6 +36,14 @@ Gives out a random cat image.
 
 Gives out a random cat fact.
 
+### $bird
+
+Gives out a random bird image.
+
+### $birdfact
+
+Gives out a random bird fact.
+
 ### $panda
 
 Gives out a random panda image.
