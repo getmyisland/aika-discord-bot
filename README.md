@@ -60,6 +60,14 @@ Gives out a random fox image.
 
 Gives out a random fox fact.
 
+### $koala
+
+Gives out a random koala image.
+
+### $koalafact
+
+Gives out a random koala fact.
+
 ## Misc commands
 
 ### $choose

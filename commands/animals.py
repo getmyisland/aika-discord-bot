@@ -167,6 +167,36 @@ class AnimalCommands(commands.Cog):
         else:
             await ctx.reply("Recieved a bad status code of " + str(resp.status_code))
 
+    @commands.command(description="Gives out a random koala image")
+    async def koala(self, ctx):
+        # Making a GET request to the endpoint
+        resp = requests.get("https://some-random-api.ml/img/koala")
+        # Checking if response has a healthy status code
+        if 300 > resp.status_code >= 200:
+            content = resp.json()
+            embed = discord.Embed(
+                title="Random Koala picture"
+            )
+            embed.set_image(url=content['link'])
+            await ctx.reply(embed=embed)
+        else:
+            await ctx.reply("Recieved a bad status code of " + str(resp.status_code))
+
+    @commands.command(description="Gives out a random koala fact")
+    async def koalafact(self, ctx):
+        # Making a GET request to the endpoint
+        resp = requests.get("https://some-random-api.ml/facts/koala")
+        # Checking if response has a healthy status code
+        if 300 > resp.status_code >= 200:
+            content = resp.json()
+            embed = discord.Embed(
+                title="Random Koala fact",
+                description=content['fact']
+            )
+            await ctx.reply(embed=embed)
+        else:
+            await ctx.reply("Recieved a bad status code of " + str(resp.status_code))
+
 
 # Must have a setup function
 def setup(client):
