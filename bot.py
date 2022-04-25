@@ -8,12 +8,12 @@ load_dotenv()
 TOKEN = os.getenv('TOKEN')
 
 command_prefix = '$'
-description = '''Discord Bot made by GetMyIsland'''
+description = '''Discord Bot made by GetMyIsland#2212'''
 intents = discord.Intents.default()
 intents.members = True
 
 # Create the bot
-bot = commands.Bot(command_prefix=command_prefix, activity=discord.Game(name="with her Piggy"), status=discord.Status.offline, description=description, intents=intents)
+bot = commands.Bot(command_prefix=command_prefix, activity=discord.Game(name="with her Piggy"), status=discord.Status.online, description=description, intents=intents)
 cog_files = ['commands.animals', 'commands.misc', 'commands.talk']
 
 for cog_file in cog_files:
