@@ -112,3 +112,17 @@ The bot chooses between the words passed in by the user.
 ### $coinflip
 
 The bot flips a coin and prints `Heads` or `Tails`.
+
+### $base64
+
+Converts the given text into Base64.
+
+**Example Input:** `Hello`\
+**Example Output:** `KCdIZWxsbycsKQ==`
+
+### $binary
+
+Converts the given text into binary.
+
+**Example Input:** `$binary Hello`\
+**Example Output:** `00101000001001110110100001100101011011000110110001101111001001110010110000101001`
