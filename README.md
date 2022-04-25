@@ -24,6 +24,14 @@ Gives out a random dog image.
 
 Gives out a random dog fact.
 
+### $panda
+
+Gives out a random panda image.
+
+### $pandafact
+
+Gives out a random panda fact.
+
 ### $choose
 
 The bot chooses between the words passed in by the user.
