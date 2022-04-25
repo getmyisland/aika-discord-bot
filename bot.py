@@ -77,6 +77,7 @@ async def rickroll(ctx):
     if voice_channel is not None:
         vc = await voice_channel.connect()
         vc.play(discord.FFmpegPCMAudio(executable=os.getcwd() + "/resources/ffmpeg.exe", source=os.getcwd() + "/resources/rickroll.mp3"))
+        ctx.delete()
     else:
         await ctx.send(str(ctx.author.name) + " is not in a voice channel.")
 
