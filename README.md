@@ -27,14 +27,6 @@ The bot flips a coin and prints `Heads` or `Tails`.
 
 Gives out a random fact.
 
-### $rickroll
-
-Rickroll your friends by typing this command, while in a voice channel. The bot joins the channel and plays **Rick Astley - Never gonna give you up**.
-
-### $leave
-
-While in the same voice channel as the bot you can call this command to make him leave.
-
 ### $role
 
 Prints all members with a specific role.

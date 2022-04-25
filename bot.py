@@ -3,7 +3,7 @@ from discord.ext import commands
 import os
 from dotenv import load_dotenv
 import random
-import string
+import aiohttp
 
 # Load the token
 load_dotenv()
@@ -18,13 +18,11 @@ intents.members = True
 bot = commands.Bot(command_prefix=command_prefix, activity=discord.Game(name="with her Piggy"), status=discord.Status.offline, description=description, intents=intents)
 
 
-# When the bot goes online
 @bot.event
 async def on_ready():
     print('Logged in as ' + bot.user.name)
 
 
-# When a message gets send
 @bot.event
 async def on_message(message):
     if message.author == bot.user:
@@ -33,30 +31,10 @@ async def on_message(message):
     print('[{0.guild.name}] Message from {0.author}: {0.content}'.format(message))
     await bot.process_commands(message)
 
-    if message.content.lower().startswith('hello'):
-        await message.channel.send('Hello!')
-
 
 @bot.command(description="Talk with the bot")
 async def talk(ctx, *content: str):
     await ctx.send('Coming Soon!')
-
-
-@bot.command(description='Choose between an unknown amount of choices')
-async def choose(ctx, *choices: str):
-    """Chooses between multiple choices."""
-    await ctx.send(random.choice(choices))
-
-
-@bot.command(description="Flip a coin")
-async def coinflip(ctx):
-    """Flip a coin."""
-    coinside = random.randint(1, 2)
-
-    if coinside == 1:
-        await ctx.send('Heads')
-    else:
-        await ctx.send('Tails')
 
 
 @bot.command(description="Gives out a random fact")
@@ -68,24 +46,21 @@ async def fact(ctx):
     await ctx.send(response)
 
 
-@bot.command(description="Rickroll your friends")
-async def rickroll(ctx):
-    # Gets voice channel of message author
-    voice_channel = ctx.author.voice.channel
-    if voice_channel is not None:
-        vc = await voice_channel.connect()
-        vc.play(discord.FFmpegPCMAudio(executable=os.getcwd() + "/resources/ffmpeg.exe", source=os.getcwd() + "/resources/rickroll.mp3"))
-    else:
-        await ctx.send(str(ctx.author.name) + " is not in a voice channel.")
+@bot.command(description='Choose between a list of choices')
+async def choose(ctx, *choices: str):
+    """Chooses between multiple choices."""
+    await ctx.reply(random.choice(choices))
 
 
-@bot.command(description="Leaves an existing voice channel")
-async def leave(ctx):
-    #Leaves the voice channel
-    if ctx.author.voice.channel and ctx.author.voice.channel == ctx.voice_client.channel:
-        await ctx.voice_client.disconnect()
+@bot.command(description="Flip a coin")
+async def coinflip(ctx):
+    """Flip a coin."""
+    coinside = random.randint(1, 2)
+
+    if coinside == 1:
+        await ctx.reply('Heads')
     else:
-        await ctx.send('You have to be connected to the same voice channel to disconnect me.')
+        await ctx.reply('Tails')
 
 
 @bot.command(description="Lists all members with a specific role")
@@ -95,16 +70,20 @@ async def role(ctx, *role):
     discord_role = discord.utils.get(ctx.guild.roles, name=role_name)
 
     if discord_role is not None:
-        members = []
+        members = ''
         for member in discord_role.members:
             members = members + member.name + '\n'
 
         if members:
-            await ctx.send(members)
+            embed = discord.Embed(
+                title="Users with the role " + role_name,
+                description=members
+            )
+            await ctx.reply(embed=embed)
         else:
-            await ctx.send("No user has the role " + role_name)
+            await ctx.reply("No user has the role " + role_name)
     else:
-        await ctx.send("There is no role with the name " + role_name)
+        await ctx.reply("There is no role with the name " + role_name)
 
 
 bot.run(TOKEN)
