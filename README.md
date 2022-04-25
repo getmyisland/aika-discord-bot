@@ -44,6 +44,14 @@ Gives out a random panda image.
 
 Gives out a random panda fact.
 
+### $redpanda
+
+Gives out a random red panda image.
+
+### $redpandafact
+
+Gives out a random red panda fact.
+
 ### $fox
 
 Gives out a random fox image.
