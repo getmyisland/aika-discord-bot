@@ -34,3 +34,10 @@ Rickroll your friends by typing this command, while in a voice channel. The bot 
 ### $leave
 
 While in the same voice channel as the bot you can call this command to make him leave.
+
+### $role
+
+Prints all members with a specific role.
+
+**Example Input:** `$role Moderator`\
+**Example Output:** `GetMyIsland, Lucas, xxx_Player_xxx`

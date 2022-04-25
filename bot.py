@@ -3,7 +3,7 @@ from discord.ext import commands
 import os
 from dotenv import load_dotenv
 import random
-import time
+import string
 
 # Load the token
 load_dotenv()
@@ -15,15 +15,13 @@ intents = discord.Intents.default()
 intents.members = True
 
 # Create the bot
-bot = commands.Bot(command_prefix=command_prefix, description=description, intents=intents)
+bot = commands.Bot(command_prefix=command_prefix, activity=discord.Game(name="with her Piggy"), status=discord.Status.offline, description=description, intents=intents)
 
 
 # When the bot goes online
 @bot.event
 async def on_ready():
     print('Logged in as ' + bot.user.name)
-    # Setting `Playing ` status
-    await bot.change_presence(activity=discord.Game(name="with her Piggy"))
 
 
 # When a message gets send
@@ -77,7 +75,6 @@ async def rickroll(ctx):
     if voice_channel is not None:
         vc = await voice_channel.connect()
         vc.play(discord.FFmpegPCMAudio(executable=os.getcwd() + "/resources/ffmpeg.exe", source=os.getcwd() + "/resources/rickroll.mp3"))
-        ctx.delete()
     else:
         await ctx.send(str(ctx.author.name) + " is not in a voice channel.")
 
@@ -89,6 +86,25 @@ async def leave(ctx):
         await ctx.voice_client.disconnect()
     else:
         await ctx.send('You have to be connected to the same voice channel to disconnect me.')
+
+
+@bot.command(description="Lists all members with a specific role")
+async def role(ctx, *role):
+    role_name = " ".join(role)
+
+    discord_role = discord.utils.get(ctx.guild.roles, name=role_name)
+
+    if discord_role is not None:
+        members = []
+        for member in discord_role.members:
+            members = members + member.name + '\n'
+
+        if members:
+            await ctx.send(members)
+        else:
+            await ctx.send("No user has the role " + role_name)
+    else:
+        await ctx.send("There is no role with the name " + role_name)
 
 
 bot.run(TOKEN)
