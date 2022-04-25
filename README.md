@@ -44,6 +44,14 @@ Gives out a random panda image.
 
 Gives out a random panda fact.
 
+### $fox
+
+Gives out a random fox image.
+
+### $foxfact
+
+Gives out a random fox fact.
+
 ## Misc commands
 
 ### $choose

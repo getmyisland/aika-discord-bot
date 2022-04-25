@@ -9,8 +9,7 @@ class AnimalCommands(commands.Cog):
 
     @commands.command(description="Displays all supported animal commands")
     async def animals(self, ctx):
-        description = '$dog' + '\t' + '= Get a random dog image \n' \
-                                      '$dogfact' + '\t' + '= Get a random dog fact'
+        description = 'Supported animals: dog, cat, panda, fox \n Example: `$dog` to get image or `$dogfact` to get fact'
 
         embed = discord.Embed(
             title="Animal commands",
@@ -102,6 +101,36 @@ class AnimalCommands(commands.Cog):
             content = resp.json()
             embed = discord.Embed(
                 title="Random Panda fact",
+                description=content['fact']
+            )
+            await ctx.reply(embed=embed)
+        else:
+            await ctx.reply("Recieved a bad status code of {resp.status_code}.")
+
+    @commands.command(description="Gives out a random fox image")
+    async def fox(self, ctx):
+        # Making a GET request to the endpoint
+        resp = requests.get("https://some-random-api.ml/img/fox")
+        # Checking if response has a healthy status code
+        if 300 > resp.status_code >= 200:
+            content = resp.json()
+            embed = discord.Embed(
+                title="Random Fox picture"
+            )
+            embed.set_image(url=content['link'])
+            await ctx.reply(embed=embed)
+        else:
+            await ctx.reply("Recieved a bad status code of {resp.status_code}.")
+
+    @commands.command(description="Gives out a random fox fact")
+    async def foxfact(self, ctx):
+        # Making a GET request to the endpoint
+        resp = requests.get("https://some-random-api.ml/facts/fox")
+        # Checking if response has a healthy status code
+        if 300 > resp.status_code >= 200:
+            content = resp.json()
+            embed = discord.Embed(
+                title="Random Fox fact",
                 description=content['fact']
             )
             await ctx.reply(embed=embed)
