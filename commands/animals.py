@@ -9,7 +9,7 @@ class AnimalCommands(commands.Cog):
 
     @commands.command(description="Displays all supported animal commands")
     async def animals(self, ctx):
-        description = 'Supported animal keywords: `dog`, `cat`, `bird`, `panda`, `redpanda`, `fox`, `koala` \n Example: `$keyword` to get image or `$keywordfact` to get fact'
+        description = 'Supported animal keywords: `dog`, `cat`, `bird`, `panda`, `redpanda`, `fox`, `koala`, `raccoon` \n Example: `$keyword` to get image or `$keywordfact` to get fact'
 
         embed = discord.Embed(
             title="Animal commands",
@@ -221,6 +221,36 @@ class AnimalCommands(commands.Cog):
             content = resp.json()
             embed = discord.Embed(
                 title="Random Koala fact",
+                description=content['fact']
+            )
+            await ctx.reply(embed=embed)
+        else:
+            await ctx.reply("Recieved a bad status code of " + str(resp.status_code))
+
+    @commands.command(description="Gives out a random raccoon image")
+    async def raccoon(self, ctx):
+        # Making a GET request to the endpoint
+        resp = requests.get("https://some-random-api.ml/img/raccoon")
+        # Checking if response has a healthy status code
+        if 300 > resp.status_code >= 200:
+            content = resp.json()
+            embed = discord.Embed(
+                title="Random Raccoon picture"
+            )
+            embed.set_image(url=content['link'])
+            await ctx.reply(embed=embed)
+        else:
+            await ctx.reply("Recieved a bad status code of " + str(resp.status_code))
+
+    @commands.command(description="Gives out a random raccoon fact")
+    async def raccoonfact(self, ctx):
+        # Making a GET request to the endpoint
+        resp = requests.get("https://some-random-api.ml/facts/raccoon")
+        # Checking if response has a healthy status code
+        if 300 > resp.status_code >= 200:
+            content = resp.json()
+            embed = discord.Embed(
+                title="Random Raccoon fact",
                 description=content['fact']
             )
             await ctx.reply(embed=embed)

@@ -76,6 +76,14 @@ Gives out a random koala image.
 
 Gives out a random koala fact.
 
+### $raccoon
+
+Gives out a random raccoon image.
+
+### $raccoonfact
+
+Gives out a random raccoon fact.
+
 ## Misc commands
 
 ### $choose
