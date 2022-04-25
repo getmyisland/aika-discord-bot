@@ -9,8 +9,8 @@ class AnimalCommands(commands.Cog):
 
     @commands.command(description="Displays all supported animal commands")
     async def animals(self, ctx):
-        description = 'Supported animal keywords: `dog`, `cat`, `bird`, `panda`, `redpanda`, `fox`, `koala`, `raccoon`, `kangaroo`, `whale`' \
-                      '\n Example: `$keyword` to get image or `$keywordfact` to get fact'
+        description = '**Supported animal keywords:**' + '\n' + '`dog`, `cat`, `bird`, `panda`, `redpanda`, `fox`, `koala`, `raccoon`, `kangaroo`, `whale`' \
+                      '\n' + '\n' + '**Example:**' + '\n' + '`$keyword` to get image or `$keywordfact` to get fact'
 
         embed = discord.Embed(
             title="Animal commands",
