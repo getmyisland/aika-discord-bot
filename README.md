@@ -2,7 +2,9 @@
 
 This discord bot was made using the **discord.py** library.
 
-## Commands
+# Commands
+
+## General commands
 
 ### $help
 
@@ -11,6 +13,8 @@ Shows all existing commands.
 ### $talk
 
 Talk with the bot. Not implemented yet. The goal is to have conversations with the bot.
+
+## Animal commands
 
 ### $animals
 
@@ -24,6 +28,14 @@ Gives out a random dog image.
 
 Gives out a random dog fact.
 
+### $cat
+
+Gives out a random cat image.
+
+### $catfact
+
+Gives out a random cat fact.
+
 ### $panda
 
 Gives out a random panda image.
@@ -31,6 +43,8 @@ Gives out a random panda image.
 ### $pandafact
 
 Gives out a random panda fact.
+
+## Misc commands
 
 ### $choose
 

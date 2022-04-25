@@ -48,6 +48,36 @@ class AnimalCommands(commands.Cog):
         else:
             await ctx.reply("Recieved a bad status code of {resp.status_code}.")
 
+    @commands.command(description="Gives out a random cat image")
+    async def cat(self, ctx):
+        # Making a GET request to the endpoint
+        resp = requests.get("https://some-random-api.ml/img/cat")
+        # Checking if response has a healthy status code
+        if 300 > resp.status_code >= 200:
+            content = resp.json()
+            embed = discord.Embed(
+                title="Random Cat picture"
+            )
+            embed.set_image(url=content['link'])
+            await ctx.reply(embed=embed)
+        else:
+            await ctx.reply("Recieved a bad status code of {resp.status_code}.")
+
+    @commands.command(description="Gives out a random cat fact")
+    async def catfact(self, ctx):
+        # Making a GET request to the endpoint
+        resp = requests.get("https://some-random-api.ml/facts/cat")
+        # Checking if response has a healthy status code
+        if 300 > resp.status_code >= 200:
+            content = resp.json()
+            embed = discord.Embed(
+                title="Random Cat fact",
+                description=content['fact']
+            )
+            await ctx.reply(embed=embed)
+        else:
+            await ctx.reply("Recieved a bad status code of {resp.status_code}.")
+
     @commands.command(description="Gives out a random panda image")
     async def panda(self, ctx):
         # Making a GET request to the endpoint
