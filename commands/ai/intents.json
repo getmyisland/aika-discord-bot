@@ -1,0 +1,36 @@
+{"intents": [
+        {"tag": "greeting",
+         "inputs": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Hey", "Someone online?", "Anyone here?", "Greetings", "Hallo", "Guten Tag", "Guten Morgen", "Nice to meet you", "Good afternoon", "Sup"],
+         "responses": ["Hello!", "Good to see you", "Hi there, how can I help?", "Do you want to talk?", "Wuff"]
+        },
+        {"tag": "goodbye",
+         "inputs": ["Bye", "See you later", "Goodbye", "Cya", "Bye bye", "Take it easy", "I'm off", "Good Night", "Gute Nacht"],
+         "responses": ["See you later, thanks for talking with me.", "Have a nice day", "Bye! Come back again soon."]
+        },
+        {"tag": "thanks",
+         "inputs": ["Thanks", "Thank you", "That's helpful"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"]
+        },
+        {"tag": "name",
+         "inputs": ["What's your name?", "Name?", "Your name?", "Who are you?"],
+         "responses": ["My name is Aika and I'm a Bot.", "I'm Aika.", "As you can see my name is Aika.", "My creator named me Aika."]
+        },
+        {"tag": "age",
+         "inputs": ["Hold old are you?", "Age?", "Your age?", "What's your age?", "When were you born?", "When were you created?", "Your creation date?"],
+         "responses": ["I was created in April 2022.", "I was created on April 22 2022."]
+        },
+        {"tag": "about",
+         "inputs": ["Tell me about yourself", "I want to learn more about you", "Tell me something about yourself"],
+         "responses": ["My name is Aika and I'm a Bot.", "I'm just a normal Discord Bot", "My name is based on my creators dog.", "I'm Aika a Discord bot created with discord.py"]
+        },
+        {"tag": "creator",
+         "inputs": ["Who created you?", "Creator?", "Your creator?", "Who programmed you?"],
+         "responses": ["My creator is GetMyIsland#2212.", "I got created by GetMyIsland#2212"]
+        },
+        {"tag": "noresponse",
+         "inputs": [""],
+         "responses": ["I don't understand you.", "What are you trying to say?"]
+        }
+
+   ]
+}

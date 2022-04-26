@@ -33,7 +33,7 @@ class AnimalCommands(commands.Cog):
         else:
             await ctx.reply("Recieved a bad status code of " + str(resp.status_code))
 
-    @commands.command(description="Gives out a random dog fact")
+    @commands.command(description="Gives out a random dog fact", aliases=['dogf'])
     async def dogfact(self, ctx):
         # Making a GET request to the endpoint
         resp = requests.get("https://some-random-api.ml/facts/dog")
@@ -63,7 +63,7 @@ class AnimalCommands(commands.Cog):
         else:
             await ctx.reply("Recieved a bad status code of " + str(resp.status_code))
 
-    @commands.command(description="Gives out a random cat fact")
+    @commands.command(description="Gives out a random cat fact", aliases=['catf'])
     async def catfact(self, ctx):
         # Making a GET request to the endpoint
         resp = requests.get("https://some-random-api.ml/facts/cat")
@@ -78,7 +78,7 @@ class AnimalCommands(commands.Cog):
         else:
             await ctx.reply("Recieved a bad status code of " + str(resp.status_code))
 
-    @commands.command(description="Gives out a random bird image")
+    @commands.command(description="Gives out a random bird image", aliases=['birb'])
     async def bird(self, ctx):
         # Making a GET request to the endpoint
         resp = requests.get("https://some-random-api.ml/img/birb")
@@ -93,7 +93,7 @@ class AnimalCommands(commands.Cog):
         else:
             await ctx.reply("Recieved a bad status code of " + str(resp.status_code))
 
-    @commands.command(description="Gives out a random bird fact")
+    @commands.command(description="Gives out a random bird fact", aliases=['birdf', 'birbfact', 'birbf'])
     async def birdfact(self, ctx):
         # Making a GET request to the endpoint
         resp = requests.get("https://some-random-api.ml/facts/birb")
@@ -123,7 +123,7 @@ class AnimalCommands(commands.Cog):
         else:
             await ctx.reply("Recieved a bad status code of " + str(resp.status_code))
 
-    @commands.command(description="Gives out a random panda fact")
+    @commands.command(description="Gives out a random panda fact", aliases=['pandaf'])
     async def pandafact(self, ctx):
         # Making a GET request to the endpoint
         resp = requests.get("https://some-random-api.ml/facts/panda")
@@ -153,7 +153,7 @@ class AnimalCommands(commands.Cog):
         else:
             await ctx.reply("Recieved a bad status code of " + str(resp.status_code))
 
-    @commands.command(description="Gives out a random red panda fact")
+    @commands.command(description="Gives out a random red panda fact", aliases=['redpandaf'])
     async def redpandafact(self, ctx):
         # Making a GET request to the endpoint
         resp = requests.get("https://some-random-api.ml/facts/red_panda")
@@ -183,7 +183,7 @@ class AnimalCommands(commands.Cog):
         else:
             await ctx.reply("Recieved a bad status code of " + str(resp.status_code))
 
-    @commands.command(description="Gives out a random fox fact")
+    @commands.command(description="Gives out a random fox fact", aliases=['foxf'])
     async def foxfact(self, ctx):
         # Making a GET request to the endpoint
         resp = requests.get("https://some-random-api.ml/facts/fox")
@@ -213,7 +213,7 @@ class AnimalCommands(commands.Cog):
         else:
             await ctx.reply("Recieved a bad status code of " + str(resp.status_code))
 
-    @commands.command(description="Gives out a random koala fact")
+    @commands.command(description="Gives out a random koala fact", aliases=['koalaf'])
     async def koalafact(self, ctx):
         # Making a GET request to the endpoint
         resp = requests.get("https://some-random-api.ml/facts/koala")
@@ -243,7 +243,7 @@ class AnimalCommands(commands.Cog):
         else:
             await ctx.reply("Recieved a bad status code of " + str(resp.status_code))
 
-    @commands.command(description="Gives out a random raccoon fact")
+    @commands.command(description="Gives out a random raccoon fact", aliases=['raccoonf'])
     async def raccoonfact(self, ctx):
         # Making a GET request to the endpoint
         resp = requests.get("https://some-random-api.ml/facts/raccoon")
@@ -273,7 +273,7 @@ class AnimalCommands(commands.Cog):
         else:
             await ctx.reply("Recieved a bad status code of " + str(resp.status_code))
 
-    @commands.command(description="Gives out a random kangaroo fact")
+    @commands.command(description="Gives out a random kangaroo fact", aliases=['kangaroof'])
     async def kangaroofact(self, ctx):
         # Making a GET request to the endpoint
         resp = requests.get("https://some-random-api.ml/facts/kangaroo")
@@ -303,7 +303,7 @@ class AnimalCommands(commands.Cog):
         else:
             await ctx.reply("Recieved a bad status code of " + str(resp.status_code))
 
-    @commands.command(description="Gives out a random whale fact")
+    @commands.command(description="Gives out a random whale fact", aliases=['whalef'])
     async def whalefact(self, ctx):
         # Making a GET request to the endpoint
         resp = requests.get("https://some-random-api.ml/facts/whale")
