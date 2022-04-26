@@ -2,6 +2,8 @@
 
 This discord bot was made using the **discord.py** library.
 
+The main goal of this bot was to create an AI you can chat with. You can use the `$talk` command to chat with the AI in its current state.
+
 # Commands
 
 ## General commands
