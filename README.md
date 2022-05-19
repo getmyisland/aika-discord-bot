@@ -14,7 +14,7 @@ Shows all existing commands.
 
 ### $talk
 
-Talk with the bot. Not implemented yet. The goal is to have conversations with the bot.
+Talk with the bot.
 
 ## Animal commands
 
