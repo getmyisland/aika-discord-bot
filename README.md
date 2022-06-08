@@ -1,12 +1,10 @@
 # discord-ai-bot
 
-This discord bot was made using the **discord.py** library.
+This discord bot was made using **discord.py**.
 
-The main goal of this bot was to create an AI you can chat with. You can use the `$talk` command to chat with the AI in its current state.
+The bot has a simple AI you can chat with. You can use the `$talk` command to have a very simple and basic interaction with the bot. The goal with creating this bot was to learn python, discord bot development and simple ai and neural-net concepts.
 
 # Commands
-
-## General commands
 
 ### $help
 
@@ -16,93 +14,17 @@ Shows all existing commands.
 
 Talk with the bot.
 
-## Animal commands
-
 ### $animals
 
 Shows all animal commands.
 
-### $dog
+### Animal Image Commands
 
-Gives out a random dog image.
+Gives out a random image of an animal. To see all available animals use the `$animal` command.
 
-### $dogfact
+### Animal Fact Commands
 
-Gives out a random dog fact.
-
-### $cat
-
-Gives out a random cat image.
-
-### $catfact
-
-Gives out a random cat fact.
-
-### $bird
-
-Gives out a random bird image.
-
-### $birdfact
-
-Gives out a random bird fact.
-
-### $panda
-
-Gives out a random panda image.
-
-### $pandafact
-
-Gives out a random panda fact.
-
-### $redpanda
-
-Gives out a random red panda image.
-
-### $redpandafact
-
-Gives out a random red panda fact.
-
-### $fox
-
-Gives out a random fox image.
-
-### $foxfact
-
-Gives out a random fox fact.
-
-### $koala
-
-Gives out a random koala image.
-
-### $koalafact
-
-Gives out a random koala fact.
-
-### $raccoon
-
-Gives out a random raccoon image.
-
-### $raccoonfact
-
-Gives out a random raccoon fact.
-
-### $kangaroo
-
-Gives out a random kangaroo image.
-
-### $kangaroofact
-
-Gives out a random kangaroo fact.
-
-### $whale
-
-Gives out a random whale image.
-
-### $whalefact
-
-Gives out a random whale fact.
-
-## Misc commands
+Gives out a random fact of an animal. To see all available animals use the `$animal` command.
 
 ### $meme
 
