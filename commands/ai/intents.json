@@ -26,11 +26,6 @@
         {"tag": "creator",
          "inputs": ["who created you", "your creator", "who programmed you", "who coded you"],
          "responses": ["My creator is GetMyIsland#2212.", "I got created by GetMyIsland#2212", "My Senpai created me uwu"]
-        },
-        {"tag": "mindblow",
-         "inputs": ["blow my mind", "tell me something that will blow my mind", "tell me a fact", "mindblowing"],
-         "responses": ["Epstein didn't kill himself.", "Jet fuel can't melt steel beams.", "9/11 was an inside job.", "JFK was assassinated by the CIA."]
         }
-
    ]
 }
