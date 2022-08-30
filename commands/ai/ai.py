@@ -9,7 +9,7 @@ import pandas
 from keras.preprocessing.text import Tokenizer
 from keras.layers import Input, Embedding, LSTM, Dense, GlobalMaxPooling1D, Flatten
 from keras.models import Model
-from keras.preprocessing.sequence import pad_sequences
+from keras_preprocessing.sequence import pad_sequences
 from sklearn.preprocessing import LabelEncoder
 
 nltk.download('punkt')
