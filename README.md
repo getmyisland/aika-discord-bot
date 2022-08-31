@@ -1,5 +1,44 @@
 # discord-ai-bot
 
-This discord bot was made using **discord.py**. The AI was created using a neural network and the **tensorflow** library.
+This Discord bot uses a small neural network to process user input and then using this information to respond dynamically to messages.
 
-The bot offers various commands as well as the `$talk` command used to talk with the bot. Use `$talk Good Morning` 
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+To run this bot locally you need Python3 and pip installed as well as the following pip packages.
+
+```
+discord
+requests
+nltk
+numpy
+tensorflow
+pandas
+keras
+```
+
+### Installing
+
+Clone the git repository on your machine. Create a `.env` file inside the project folder. Discord requires a unique token for every bot. You can get the token on the [Discord Developer Portal](https://discord.com/developers/docs/intro) website, by creating a new application and copying the token.
+
+Open the `.env` file in any text editor and paste in your token.
+
+```
+TOKEN=123456789
+```
+
+After following the steps above run this command inside the project folder.
+
+```
+python bot.py
+```
+
+You should now get messages that command modules have been loaded and that tensorflow trains the AI. 
+
+## Built With
+
+* [discord.py](https://discordpy.readthedocs.io/en/stable/) - Python Discord Framework
+* [Tensorflow](https://www.tensorflow.org/) - Machine Learning Platform
