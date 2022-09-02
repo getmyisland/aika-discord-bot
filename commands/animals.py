@@ -1,11 +1,25 @@
+import random
 import discord
 from discord.ext import commands
 import requests
+from bot import aika_images
 
 
 class AnimalCommands(commands.Cog):
     def __init__(self, client):
         self.bot = client
+
+    @commands.command(description="Shares random images of Aika")
+    async def aika(self, ctx):
+        if len(aika_images) != 0:
+            random_image = random.choice(aika_images)
+            embed = discord.Embed(
+                title="Random Aika picture"
+            )
+            embed.set_image(url=random_image.link)
+            await ctx.reply(embed=embed)
+        else:
+            await ctx.reply('There are no images of me at the moment')
 
     @commands.command(description="Displays all supported animal commands")
     async def animals(self, ctx):
