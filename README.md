@@ -8,16 +8,17 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-To run this bot locally you need Python3 and pip installed as well as the following pip packages.
+To run this bot locally you need Python3 and pip installed as well as the following pip packages. The version numbers behind show which versions I used, older or newer versions may also work.
 
 ```
-discord
-requests
-nltk
-numpy
-tensorflow
-pandas
-keras
+discord == 1.7.3
+requests == 2.28.0
+nltk == 3.7
+numpy == 1.23.2
+tensorflow == 2.9.1
+pandas == 1.4.3 
+keras == 2.9.0
+imgurpython == 1.1.7
 ```
 
 ### Installing
