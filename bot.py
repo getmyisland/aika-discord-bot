@@ -2,15 +2,10 @@ import discord
 from discord.ext import commands
 import os
 from dotenv import load_dotenv
-from imgurpython import ImgurClient
 
 # Load the discord bot token
 load_dotenv()
 TOKEN = os.getenv('TOKEN')
-
-# Create imgur client
-imgur_client = ImgurClient(os.getenv('CLIENT_ID'), os.getenv('CLIENT_SECRET'))
-aika_images = imgur_client.get_album_images('rcqfw8h')
 
 command_prefix = '$'
 description = '''Discord Bot made by GetMyIsland#2212.'''

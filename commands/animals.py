@@ -2,24 +2,11 @@ import random
 import discord
 from discord.ext import commands
 import requests
-from bot import aika_images
 
 
 class AnimalCommands(commands.Cog):
     def __init__(self, client):
         self.bot = client
-
-    @commands.command(description="Shares random images of Aika")
-    async def aika(self, ctx):
-        if len(aika_images) != 0:
-            random_image = random.choice(aika_images)
-            embed = discord.Embed(
-                title="Random Aika picture"
-            )
-            embed.set_image(url=random_image.link)
-            await ctx.reply(embed=embed)
-        else:
-            await ctx.reply('There are no images of me at the moment')
 
     @commands.command(description="Displays all supported animal commands")
     async def animals(self, ctx):
@@ -45,7 +32,7 @@ class AnimalCommands(commands.Cog):
             embed.set_image(url=content['link'])
             await ctx.reply(embed=embed)
         else:
-            await ctx.reply("Recieved a bad status code of " + str(resp.status_code))
+            await ctx.reply("Received a bad status code of " + str(resp.status_code))
 
     @commands.command(description="Gives out a random dog fact", aliases=['dogf'])
     async def dogfact(self, ctx):
@@ -60,7 +47,7 @@ class AnimalCommands(commands.Cog):
             )
             await ctx.reply(embed=embed)
         else:
-            await ctx.reply("Recieved a bad status code of " + str(resp.status_code))
+            await ctx.reply("Received a bad status code of " + str(resp.status_code))
 
     @commands.command(description="Gives out a random cat image")
     async def cat(self, ctx):
@@ -75,7 +62,7 @@ class AnimalCommands(commands.Cog):
             embed.set_image(url=content['link'])
             await ctx.reply(embed=embed)
         else:
-            await ctx.reply("Recieved a bad status code of " + str(resp.status_code))
+            await ctx.reply("Received a bad status code of " + str(resp.status_code))
 
     @commands.command(description="Gives out a random cat fact", aliases=['catf'])
     async def catfact(self, ctx):
@@ -90,7 +77,7 @@ class AnimalCommands(commands.Cog):
             )
             await ctx.reply(embed=embed)
         else:
-            await ctx.reply("Recieved a bad status code of " + str(resp.status_code))
+            await ctx.reply("Received a bad status code of " + str(resp.status_code))
 
     @commands.command(description="Gives out a random bird image", aliases=['birb'])
     async def bird(self, ctx):
@@ -105,7 +92,7 @@ class AnimalCommands(commands.Cog):
             embed.set_image(url=content['link'])
             await ctx.reply(embed=embed)
         else:
-            await ctx.reply("Recieved a bad status code of " + str(resp.status_code))
+            await ctx.reply("Received a bad status code of " + str(resp.status_code))
 
     @commands.command(description="Gives out a random bird fact", aliases=['birdf', 'birbfact', 'birbf'])
     async def birdfact(self, ctx):
@@ -120,7 +107,7 @@ class AnimalCommands(commands.Cog):
             )
             await ctx.reply(embed=embed)
         else:
-            await ctx.reply("Recieved a bad status code of " + str(resp.status_code))
+            await ctx.reply("Received a bad status code of " + str(resp.status_code))
 
     @commands.command(description="Gives out a random panda image")
     async def panda(self, ctx):
@@ -135,7 +122,7 @@ class AnimalCommands(commands.Cog):
             embed.set_image(url=content['link'])
             await ctx.reply(embed=embed)
         else:
-            await ctx.reply("Recieved a bad status code of " + str(resp.status_code))
+            await ctx.reply("Received a bad status code of " + str(resp.status_code))
 
     @commands.command(description="Gives out a random panda fact", aliases=['pandaf'])
     async def pandafact(self, ctx):
@@ -150,7 +137,7 @@ class AnimalCommands(commands.Cog):
             )
             await ctx.reply(embed=embed)
         else:
-            await ctx.reply("Recieved a bad status code of " + str(resp.status_code))
+            await ctx.reply("Received a bad status code of " + str(resp.status_code))
 
     @commands.command(description="Gives out a random red panda image")
     async def redpanda(self, ctx):
@@ -165,7 +152,7 @@ class AnimalCommands(commands.Cog):
             embed.set_image(url=content['link'])
             await ctx.reply(embed=embed)
         else:
-            await ctx.reply("Recieved a bad status code of " + str(resp.status_code))
+            await ctx.reply("Received a bad status code of " + str(resp.status_code))
 
     @commands.command(description="Gives out a random red panda fact", aliases=['redpandaf'])
     async def redpandafact(self, ctx):
@@ -180,7 +167,7 @@ class AnimalCommands(commands.Cog):
             )
             await ctx.reply(embed=embed)
         else:
-            await ctx.reply("Recieved a bad status code of " + str(resp.status_code))
+            await ctx.reply("Received a bad status code of " + str(resp.status_code))
 
     @commands.command(description="Gives out a random fox image")
     async def fox(self, ctx):
@@ -195,7 +182,7 @@ class AnimalCommands(commands.Cog):
             embed.set_image(url=content['link'])
             await ctx.reply(embed=embed)
         else:
-            await ctx.reply("Recieved a bad status code of " + str(resp.status_code))
+            await ctx.reply("Received a bad status code of " + str(resp.status_code))
 
     @commands.command(description="Gives out a random fox fact", aliases=['foxf'])
     async def foxfact(self, ctx):
@@ -210,7 +197,7 @@ class AnimalCommands(commands.Cog):
             )
             await ctx.reply(embed=embed)
         else:
-            await ctx.reply("Recieved a bad status code of " + str(resp.status_code))
+            await ctx.reply("Received a bad status code of " + str(resp.status_code))
 
     @commands.command(description="Gives out a random koala image")
     async def koala(self, ctx):
@@ -225,7 +212,7 @@ class AnimalCommands(commands.Cog):
             embed.set_image(url=content['link'])
             await ctx.reply(embed=embed)
         else:
-            await ctx.reply("Recieved a bad status code of " + str(resp.status_code))
+            await ctx.reply("Received a bad status code of " + str(resp.status_code))
 
     @commands.command(description="Gives out a random koala fact", aliases=['koalaf'])
     async def koalafact(self, ctx):
@@ -240,7 +227,7 @@ class AnimalCommands(commands.Cog):
             )
             await ctx.reply(embed=embed)
         else:
-            await ctx.reply("Recieved a bad status code of " + str(resp.status_code))
+            await ctx.reply("Received a bad status code of " + str(resp.status_code))
 
     @commands.command(description="Gives out a random raccoon image")
     async def raccoon(self, ctx):
@@ -255,7 +242,7 @@ class AnimalCommands(commands.Cog):
             embed.set_image(url=content['link'])
             await ctx.reply(embed=embed)
         else:
-            await ctx.reply("Recieved a bad status code of " + str(resp.status_code))
+            await ctx.reply("Received a bad status code of " + str(resp.status_code))
 
     @commands.command(description="Gives out a random raccoon fact", aliases=['raccoonf'])
     async def raccoonfact(self, ctx):
@@ -270,7 +257,7 @@ class AnimalCommands(commands.Cog):
             )
             await ctx.reply(embed=embed)
         else:
-            await ctx.reply("Recieved a bad status code of " + str(resp.status_code))
+            await ctx.reply("Received a bad status code of " + str(resp.status_code))
 
     @commands.command(description="Gives out a random kangaroo image")
     async def kangaroo(self, ctx):
@@ -285,7 +272,7 @@ class AnimalCommands(commands.Cog):
             embed.set_image(url=content['link'])
             await ctx.reply(embed=embed)
         else:
-            await ctx.reply("Recieved a bad status code of " + str(resp.status_code))
+            await ctx.reply("Received a bad status code of " + str(resp.status_code))
 
     @commands.command(description="Gives out a random kangaroo fact", aliases=['kangaroof'])
     async def kangaroofact(self, ctx):
@@ -300,7 +287,7 @@ class AnimalCommands(commands.Cog):
             )
             await ctx.reply(embed=embed)
         else:
-            await ctx.reply("Recieved a bad status code of " + str(resp.status_code))
+            await ctx.reply("Received a bad status code of " + str(resp.status_code))
 
     @commands.command(description="Gives out a random whale image")
     async def whale(self, ctx):
@@ -315,7 +302,7 @@ class AnimalCommands(commands.Cog):
             embed.set_image(url=content['link'])
             await ctx.reply(embed=embed)
         else:
-            await ctx.reply("Recieved a bad status code of " + str(resp.status_code))
+            await ctx.reply("Received a bad status code of " + str(resp.status_code))
 
     @commands.command(description="Gives out a random whale fact", aliases=['whalef'])
     async def whalefact(self, ctx):
@@ -330,7 +317,7 @@ class AnimalCommands(commands.Cog):
             )
             await ctx.reply(embed=embed)
         else:
-            await ctx.reply("Recieved a bad status code of " + str(resp.status_code))
+            await ctx.reply("Received a bad status code of " + str(resp.status_code))
 
 
 # Must have a setup function

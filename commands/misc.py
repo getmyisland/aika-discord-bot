@@ -20,7 +20,7 @@ class MiscCommands(commands.Cog):
             embed.set_image(url=content['image'])
             await ctx.reply(embed=embed)
         else:
-            await ctx.reply("Recieved a bad status code of " + str(resp.status_code))
+            await ctx.reply("Received a bad status code of " + str(resp.status_code))
 
     @commands.command(description='Returns a random joke')
     async def joke(self, ctx):
@@ -29,7 +29,7 @@ class MiscCommands(commands.Cog):
             content = resp.json()
             await ctx.reply(content['joke'])
         else:
-            await ctx.reply("Recieved a bad status code of " + str(resp.status_code))
+            await ctx.reply("Received a bad status code of " + str(resp.status_code))
 
     @commands.command(description='Choose between a list of choices')
     async def choose(self, ctx, *choices: str):
@@ -53,7 +53,7 @@ class MiscCommands(commands.Cog):
             content = resp.json()
             await ctx.reply(content['base64'])
         else:
-            await ctx.reply("Recieved a bad status code of " + str(resp.status_code))
+            await ctx.reply("Received a bad status code of " + str(resp.status_code))
 
     @commands.command(description='Decode text into Binary')
     async def binary(self, ctx, *encode: str):
@@ -62,7 +62,7 @@ class MiscCommands(commands.Cog):
             content = resp.json()
             await ctx.reply(content['binary'])
         else:
-            await ctx.reply("Recieved a bad status code of " + str(resp.status_code))
+            await ctx.reply("Received a bad status code of " + str(resp.status_code))
 
 
 # Must have a setup function

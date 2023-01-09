@@ -18,7 +18,6 @@ numpy == 1.23.2
 tensorflow == 2.9.1
 pandas == 1.4.3 
 keras == 2.9.0
-imgurpython == 1.1.7
 ```
 
 ### Installing
