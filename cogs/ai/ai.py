@@ -2,7 +2,7 @@ import random
 
 import nltk
 import numpy
-import tensorflow
+# import tensorflow
 import json
 import os
 import pandas
@@ -14,25 +14,25 @@ from sklearn.preprocessing import LabelEncoder
 
 nltk.download('punkt')
 
-with open(os.getcwd() + "/commands/ai/intents.json") as file:
+with open(os.getcwd() + "/cogs/ai/intents.json") as file:
     data = json.load(file)
 
 tags = []
-inputs = []
+patterns = []
 responses = {}
 
 for intent in data["intents"]:
     responses[intent['tag']] = intent['responses']
-    for lines in intent["inputs"]:
-        inputs.append(lines)
+    for lines in intent["patterns"]:
+        patterns.append(lines)
         tags.append(intent['tag'])
 
-data = pandas.DataFrame({"inputs": inputs, "tags": tags})
+data = pandas.DataFrame({"patterns": patterns, "tags": tags})
 
 # Tokenizing the data
 tokenizer = Tokenizer(num_words=2000)
-tokenizer.fit_on_texts(data['inputs'])
-train = tokenizer.texts_to_sequences(data['inputs'])
+tokenizer.fit_on_texts(data['patterns'])
+train = tokenizer.texts_to_sequences(data['patterns'])
 x_train = pad_sequences(train)
 
 # Encode the outputs

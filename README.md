@@ -1,6 +1,6 @@
 # discord-ai-bot
 
-This Discord bot uses a small neural network to process user input and then using this information to respond dynamically to messages.
+This Discord bot uses a small neural network to process user input and then using this information to respond dynamically to messages. It also features a lot of other useful commands.
 
 ## Getting Started
 
@@ -8,35 +8,25 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-To run this bot locally you need Python3 and pip installed as well as the following pip packages. The version numbers behind show which versions I used, older or newer versions may also work.
+To run this bot locally you need Python3 and pip installed. To install all required packages use the following command: `pip install -r requirements.txt`.
 
-```
-discord == 1.7.3
-requests == 2.28.0
-nltk == 3.7
-numpy == 1.23.2
-tensorflow == 2.9.1
-pandas == 1.4.3 
-keras == 2.9.0
-```
+Tensorflow is not yet in the PyPI repositories and needs to be installed manually. If you have Python 3.10 installed you can use the command below to install it. Refer to the [official installation site](https://www.tensorflow.org/install/pip) for more installation options.
+
+`python3 -m pip install --upgrade https://storage.googleapis.com/tensorflow/windows/cpu/tensorflow_cpu-2.11.0-cp310-cp310-win_amd64.whl`
 
 ### Installing
 
-Clone the git repository on your machine. Create a `.env` file inside the project folder. Discord requires a unique token for every bot. You can get the token on the [Discord Developer Portal](https://discord.com/developers/docs/intro) website, by creating a new application and copying the token.
+Clone the git repository on your machine. Discord requires a unique token for every bot. You can get the token on the [Discord Developer Portal](https://discord.com/developers/docs/intro) website, by creating a new application and copying the token.
 
-Open the `.env` file in any text editor and paste in your token.
+Create a `.env` file inside the project folder. Open the `.env` file in any text editor and paste in your token.
 
-```
-TOKEN=123456789
-```
+`DISCORD_TOKEN=123456789`
 
-After following the steps above run this command inside the project folder.
+After following the steps above run the command below at the root of the project folder.
 
-```
-python bot.py
-```
+`python bot.py`
 
-You should now get messages that command modules have been loaded and that tensorflow trains the AI. 
+You should now get messages that the cog modules have been loaded and Tensorflow trains the AI.
 
 ## Built With
 
