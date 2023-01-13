@@ -1,6 +1,6 @@
 # discord-ai-bot
 
-This Discord bot uses a small neural network to process user input and then using this information to respond dynamically to messages. It also features a lot of other useful commands.
+This Discord bot uses a small neural network to process user input and then using this information to respond dynamically to messages. It also features a lot of other useful and fun commands.
 
 ## Getting Started
 
