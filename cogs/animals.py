@@ -9,20 +9,28 @@ class AnimalCommands(commands.Cog):
     def __init__(self, bot: commands.Bot) -> None:
         self.bot = bot
 
-    class Animals(Enum):
+    class AnimalImages(Enum):
         Dog = "dog",
         Cat = "cat",
         Bird = "bird",
         Panda = "panda",
-        Red_Panda = "redpanda",
+        Red_Panda = "red_panda",
         Fox = "fox",
         Koala = "koala",
         Racoon = "racoon",
         Kangaroo = "kangaroo",
         Whale = "whale"
 
+    class AnimalFacts(Enum):
+        Dog = "dog",
+        Cat = "cat",
+        Bird = "bird",
+        Panda = "panda",
+        Fox = "fox",
+        Koala = "koala",
+
     @app_commands.command(name="animal_image", description="Sends a random image of the selected animal")
-    async def animal_image(self, interaction: discord.Interaction, animal: Animals):
+    async def animal_image(self, interaction: discord.Interaction, animal: AnimalImages):
         animal_name = ''.join(e for e in animal.value if e.isalnum())
 
         # Making a GET request to the endpoint
@@ -39,7 +47,7 @@ class AnimalCommands(commands.Cog):
             await interaction.response.send_message("Received a bad status code of " + str(resp.status_code))
 
     @app_commands.command(name="animal_fact", description="Sends a random fact of the selected animal")
-    async def animal_fact(self, interaction: discord.Interaction, animal: Animals):
+    async def animal_fact(self, interaction: discord.Interaction, animal: AnimalFacts):
         animal_name = ''.join(e for e in animal.value if e.isalnum())
 
         # Making a GET request to the endpoint
