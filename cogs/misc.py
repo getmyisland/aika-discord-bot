@@ -32,7 +32,7 @@ class MiscCommands(commands.Cog):
             content = resp.json()
             await interaction.response.send_message(content['joke'])
         else:
-            await interaction.response.send_message("Received a bad status code of " + str(resp.status_code))
+            await interaction.response.send_message("Received a bad status code of " + str(resp.status_code), ephemeral=True)
 
     @app_commands.command(name="choose", description="Chooses between multiple choices")
     async def choose(self, interaction: discord.Interaction, choice1: str, choice2: str, choice3: str = None, choice4: str = None, choice5: str = None) -> None:
@@ -68,7 +68,7 @@ class MiscCommands(commands.Cog):
             content = resp.json()
             await interaction.response.send_message(content['base64'])
         else:
-            await interaction.response.send_message("Received a bad status code of " + str(resp.status_code))
+            await interaction.response.send_message("Received a bad status code of " + str(resp.status_code), ephemeral=True)
 
     @app_commands.command(name="base64_decode", description="Decode text from Base64")
     async def base64_decode(self, interaction: discord.Interaction, decode: str) -> None:
@@ -77,7 +77,7 @@ class MiscCommands(commands.Cog):
             content = resp.json()
             await interaction.response.send_message(content['text'])
         else:
-            await interaction.response.send_message("Received a bad status code of " + str(resp.status_code))
+            await interaction.response.send_message("Received a bad status code of " + str(resp.status_code), ephemeral=True)
 
     @app_commands.command(name="binary_encode", description="Encode text into Binary")
     async def binary_encode(self, interaction: discord.Interaction, encode: str) -> None:
@@ -86,7 +86,7 @@ class MiscCommands(commands.Cog):
             content = resp.json()
             await interaction.response.send_message(content['binary'])
         else:
-            await interaction.response.send_message("Received a bad status code of " + str(resp.status_code))
+            await interaction.response.send_message("Received a bad status code of " + str(resp.status_code), ephemeral=True)
 
     @app_commands.command(name="binary_decode", description="Decode text from Binary")
     async def binary_decode(self, interaction: discord.Interaction, decode: str) -> None:
@@ -95,7 +95,7 @@ class MiscCommands(commands.Cog):
             content = resp.json()
             await interaction.response.send_message(content['text'])
         else:
-            await interaction.response.send_message("Received a bad status code of " + str(resp.status_code))
+            await interaction.response.send_message("Received a bad status code of " + str(resp.status_code), ephemeral=True)
 
 
 async def setup(bot: commands.Bot) -> None:

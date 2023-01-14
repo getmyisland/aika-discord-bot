@@ -44,7 +44,7 @@ class AnimalCommands(commands.Cog):
             embed.set_image(url=content['link'])
             await interaction.response.send_message(embed=embed)
         else:
-            await interaction.response.send_message("Received a bad status code of " + str(resp.status_code))
+            await interaction.response.send_message("Received a bad status code of " + str(resp.status_code), ephemeral=True)
 
     @app_commands.command(name="animal_fact", description="Sends a random fact of the selected animal")
     async def animal_fact(self, interaction: discord.Interaction, animal: AnimalFacts):
@@ -61,7 +61,7 @@ class AnimalCommands(commands.Cog):
             )
             await interaction.response.send_message(embed=embed)
         else:
-            await interaction.response.send_message("Received a bad status code of " + str(resp.status_code))
+            await interaction.response.send_message("Received a bad status code of " + str(resp.status_code), ephemeral=True)
 
 
 async def setup(bot: commands.Bot) -> None:

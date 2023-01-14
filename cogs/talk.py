@@ -15,7 +15,7 @@ class TalkCommand(commands.Cog):
         message = ''.join(message)
         texts = [message]
 
-        await interaction.response.send_message("This command is currently disabled")
+        await interaction.response.send_message("This command is currently disabled", ephemeral=True)
         # await interaction.response.send_message(get_response(self, texts))
 
 
