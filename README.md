@@ -1,6 +1,6 @@
-# discord-ai-bot
+# aika-discord-bot
 
-This Discord bot uses a small neural network to process user input and then using this information to respond dynamically to messages. It also features a lot of other useful and fun commands.
+The Aika Discord bot uses a small neural network to process user input and then using this information to respond dynamically to messages. It also features a lot of other useful and fun commands. The bot is inspired by my dog Aika.
 
 ## Getting Started
 
