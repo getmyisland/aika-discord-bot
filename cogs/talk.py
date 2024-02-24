@@ -2,7 +2,7 @@ import string
 import discord
 from discord import app_commands
 from discord.ext import commands
-# from cogs.ai.ai import get_response
+from cogs.ai.ai import get_response
 
 
 class TalkCommand(commands.Cog):
@@ -13,10 +13,9 @@ class TalkCommand(commands.Cog):
     async def talk(self, interaction: discord.Interaction, message: str) -> None:
         message = [letters.lower() for letters in message if letters not in string.punctuation]
         message = ''.join(message)
-        texts = [message]
+        texts = message
 
-        await interaction.response.send_message("This command is currently disabled", ephemeral=True)
-        # await interaction.response.send_message(get_response(self, texts))
+        await interaction.response.send_message(get_response(self, texts))
 
 
 async def setup(bot: commands.Bot) -> None:

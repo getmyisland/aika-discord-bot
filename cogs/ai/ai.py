@@ -2,14 +2,13 @@ import random
 
 import nltk
 import numpy
-# import tensorflow
 import json
 import os
 import pandas
-from keras.preprocessing.text import Tokenizer
-from keras.layers import Input, Embedding, LSTM, Dense, GlobalMaxPooling1D, Flatten
+from keras.layers import Input, Embedding, LSTM, Dense, Flatten
 from keras.models import Model
 from keras_preprocessing.sequence import pad_sequences
+from keras_preprocessing.text import Tokenizer
 from sklearn.preprocessing import LabelEncoder
 
 nltk.download('punkt')
@@ -24,7 +23,7 @@ responses = {}
 for intent in data["intents"]:
     responses[intent['tag']] = intent['responses']
     for lines in intent["patterns"]:
-        patterns.append(lines)
+        patterns.append(lines.lower())
         tags.append(intent['tag'])
 
 data = pandas.DataFrame({"patterns": patterns, "tags": tags})
@@ -63,13 +62,15 @@ model.compile(loss="sparse_categorical_crossentropy", optimizer='adam', metrics=
 train = model.fit(x_train, y_train, epochs=200)
 
 
-def get_response(self, message):
-    prediction = tokenizer.texts_to_sequences(message)
-    prediction = numpy.array(prediction, dtype=object).reshape(-1)
-    prediction = pad_sequences([prediction], input_shape)
+def get_response(self, message: str):
+    message = message.lower()
+
+    prediction = tokenizer.texts_to_sequences([message])
+    prediction = pad_sequences(prediction, maxlen=input_shape)
 
     output = model.predict(prediction)
-    output = output.argmax()
+    predicted_index = numpy.argmax(output)
+    response_tag = label_encoder.inverse_transform([predicted_index])[0]
+    response = random.choice(responses[response_tag])
 
-    response_tag = label_encoder.inverse_transform(([output]))[0]
-    return random.choice(responses[response_tag])
+    return response
