@@ -1,7 +1,6 @@
 discord==2.3.2
 keras~=3.0.5
 nltk==3.8.1
-numpy==1.26.4
 pandas==1.5.2
 python-dotenv==1.0.1
 Requests==2.31.0

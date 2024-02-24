@@ -1,7 +1,6 @@
 import random
 
 import nltk
-import numpy
 import json
 import os
 import pandas
@@ -69,7 +68,7 @@ def get_response(self, message: str):
     prediction = pad_sequences(prediction, maxlen=input_shape)
 
     output = model.predict(prediction)
-    predicted_index = numpy.argmax(output)
+    predicted_index = max(range(len(output[0])), key=output[0].__getitem__)
     response_tag = label_encoder.inverse_transform([predicted_index])[0]
     response = random.choice(responses[response_tag])
 
