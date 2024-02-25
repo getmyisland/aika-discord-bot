@@ -1,32 +1,51 @@
 # aika-discord-bot
 
-The aika-discord-bot utilizes a neural network to process user input and then using this information to respond dynamically to messages. The bot is inspired by my dog Aika.
+A Discord bot, inspired by my dog Aika, that uses a neural network to respond to the user, built with [discord.py](https://discordpy.readthedocs.io/en/stable/).
 
-## Getting Started
+## Features
 
-These instructions will get you a copy of the project up and running on your local machine.
+* Neural Network
+* Customizable Intents
+* Miscellaneous Commands using [Some Random Api](https://some-random-api.com/)
 
-### Prerequisites
+## How To Use
 
-To run this bot locally you need Python3 and pip installed. To install all required packages use the following command: `pip install -r requirements.txt`.
+To clone this application, you'll need [Git](https://git-scm.com/downloads) installed on your computer. From your command line:
 
-Tensorflow is not yet in the PyPI repositories and needs to be installed manually. If you have Python 3.10 installed you can use the command below to install it. Refer to the [official installation site](https://www.tensorflow.org/install/pip) for more installation options.
+```
+# Clone this repository
+$ git clone https://github.com/getmyisland/aika-discord-bot.git
 
-`python3 -m pip install --upgrade https://storage.googleapis.com/tensorflow/windows/cpu/tensorflow_cpu-2.11.0-cp310-cp310-win_amd64.whl`
+# Go into the repository
+$ cd aika-discord-bot
+```
 
-### Installing
+Create a `.env` file inside the repository folder and paste your bot token, which you received from the [Discord Developer Portal](https://discord.com/developers/applications), to this file as follows:
 
-Clone the git repository on your machine. Discord requires a unique token for every bot. You can get the token on the [Discord Developer Portal](https://discord.com/developers/docs/intro) website, by creating a new application and copying the token.
+```
+DISCORD_TOKEN=123YOUR456TOKEN789
+```
 
-Create a `.env` file inside the project folder. Open the `.env` file in any text editor and paste in your token.
+### Docker (Recommended)
 
-`DISCORD_TOKEN=123456789`
+You need [Docker](https://www.docker.com/) installed on your computer. From your command line:
 
-After following the steps above run the command below at the root of the project folder.
+```
+# Create and start the Docker container
+$ sudo docker-compose up
+```
 
-`python bot.py`
+### Without Docker
 
-You should now get messages that the cog modules have been loaded and Tensorflow trains the AI.
+You need [Python3](https://www.python.org/downloads/) installed on your computer. From your command line:
+
+```
+# Install all requirements
+pip install --no-cache-dir -r requirements.txt
+
+# Run the bot
+python3 bot.py
+```
 
 ## Built With
 
